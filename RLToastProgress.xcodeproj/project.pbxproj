@@ -16,6 +16,7 @@
 		13531A9526D5E42900C91685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13531A9326D5E42900C91685 /* Main.storyboard */; };
 		13531A9726D5E42E00C91685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13531A9626D5E42E00C91685 /* Assets.xcassets */; };
 		13531A9A26D5E42E00C91685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13531A9826D5E42E00C91685 /* LaunchScreen.storyboard */; };
+		13531AA026D5E6E900C91685 /* RLToastProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13531A9F26D5E6E900C91685 /* RLToastProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		13531A9626D5E42E00C91685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13531A9926D5E42E00C91685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13531A9B26D5E42E00C91685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13531A9F26D5E6E900C91685 /* RLToastProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLToastProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				13531A7026D5E38F00C91685 /* RLToastProgress.h */,
 				13531A7126D5E38F00C91685 /* Info.plist */,
+				13531A9F26D5E6E900C91685 /* RLToastProgress.swift */,
 			);
 			path = RLToastProgress;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					13531A6C26D5E38F00C91685 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					13531A7526D5E38F00C91685 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13531AA026D5E6E900C91685 /* RLToastProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		13531A8226D5E39000C91685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 36BF9P9PDN;
@@ -455,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.htkien.RLToastProgress;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +470,7 @@
 		13531A8326D5E39000C91685 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 36BF9P9PDN;
@@ -488,6 +496,7 @@
 		13531A8526D5E39000C91685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36BF9P9PDN;
 				INFOPLIST_FILE = RLToastProgressTests/Info.plist;
@@ -506,6 +515,7 @@
 		13531A8626D5E39000C91685 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36BF9P9PDN;
 				INFOPLIST_FILE = RLToastProgressTests/Info.plist;
